@@ -108,9 +108,10 @@ output "security_groups" {
   value = "${aws_security_group.elb-sg.id}"
 }
 
-output "elb_public_ip" {
+output "elb_dns_name" {
   value = "${aws_elb.example.dns_name}"
 }
+
 #output "public_ip" {
 #  value = "${aws_instance.example.public_ip}"
 #}
